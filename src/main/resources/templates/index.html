@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portafolio JMSC</title>
+        <link rel="stylesheet" th:href="@{/css/style.css}" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700&display=swap"
+            rel="stylesheet">
+        <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+
+    <body>
+        <header class="header" id="header">
+            <a href="#" class="logo"><span class="span-logo">P</span>ortafolio <span class="span-logo">W</span>eb</a>
+            <ul class="navlist">
+                <li><a href="#hero-header">Inicio</a></li>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#estudios">Formación</a></li>
+                <li><a href="#portfolio">Portafolio</a></li>
+                <li><a href="#contacto" id="active">Contacto</a></li>
+            </ul>
+
+            <div class="bx bx-menu" id="menu-icon">
+
+            </div>
+        </header>
+
+
+        <main class="hero-header" id="hero-header">
+            <div th:if="${exito != null}" class="alert alerta-exito" role="alert" id="alerta-exito">
+                <p class="cartel-exceptions-exito text-center text-white" th:text="${exito}"></p>
+            </div>
+            <div th:if="${error != null}" class="alert alerta-error" role="alert" id="alerta-error">
+                <p class="cartel-exceptions-error text-center text-white" th:text="${error}"></p>
+            </div>
+            <div class="container">
+                <div class="row align-items-center" id="posicion">
+                    <div class="col-md-6">
+                        <div class="hero-pic">
+                            <img src="images/imagenDos.jpg" alt="Profile Image">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="hero-text">
+                        <p class="hero-text-p">Hola, mi nombre es <span class="hero-text-span-nombre">Juan Santa
+                                Cruz</span></p>
+                        <h5 class="hero-text-h5">Soy <span class="hero-text-span-js" id="typed-output"></span></h5>
+                        <p class="hero-text-about">Apasionado por los foros anónimos desde 2014 y usuario activo
+                            en comunidades como 4Chan, Reddit y Taringa.<br>
+                            Mi interés se centra en la geopolítica, la economia, el
+                            avance tecnológico y la programación. </p>
+
+                        <p>Mis objetivos para este 2024 incluyen comenzar la carrera de analista en sistemas y alcanzar un
+                            nivel B2 de inglés.</p>
+
+                        <p class="hero-text-about-2"> Programador en constante evolución, autodidacta y autosuficiente.
+                        </p>
+
+                        <div class="btn-group">
+                            <a id="buttonCV" href="#" class="buttonCV active">Descargar CV</a>
+                            <a id="buttonContact" href="#" class="buttonContact">Contacto</a>
+                        </div>
+
+                        <div class="social">
+                            <a href="#"><i class="fab fa-facebook hero-text-social"></i></a>
+                            <a href="#"><i class="fab fa-linkedin hero-text-social"></i></a>
+                            <a href="#"><i class="fab fa-whatsapp hero-text-social"></i></a>
+                            <a href="#"><i class="fas fa-envelope hero-text-social"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <section class="services" id="services">
+
+            <div>
+                <h1 class="titulo-skills">Skills</h1>
+            </div>
+
+            <div class="services-content">
+                <div class="group-boxes">
+                    <div class="box" id="box-cliente">
+                        <img class="icon" id="icon" src="images/icon.png" alt="">
+                        <h2>Cliente</h2>
+                        <p>Experiencia en HTML, CSS, JavaScript y Bootstrap, he creado páginas web y APIs desde cero,
+                            proporcionando una experiencia de usuario dinámica y atractiva.</p>
+                    </div>
+
+                    <div class="box" id="box-herramientas">
+                        <img class="icon" id="icon" src="images/icon-3.png" alt="">
+                        <h2>Manejo de Información</h2>
+                        <p>Experiencia en SQL y MySQL, desde la creación de bases de datos y tablas hasta la realización de
+                            consultas y subconsultas. Conocimiento de los tipos de datos, relaciones entre tablas y JOINs.
+
+                        </p>
+                    </div>
+
+                    <div class="box" id="box-servidor">
+                        <img class="icon" id="icon" src="images/icon-2.png" alt="">
+                        <h2>Servidor</h2>
+                        <p>Experiencia en desarrollo backend con Java, Spring Boot, y Spring MVC. Arquitecturas por capas,
+                            operaciones CRUD utilizando JDBC y JPA, seguridad mediante Spring Security, conocimientos en
+                            pruebas
+                            unitarias con JUnit y Mockito, así como en contenerización con Docker.</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h1 class="titulo-skills">Stack</h1>
+                </div>
+
+                <div class="group-boxes">
+                    <div class="box" id="box-servidor">
+                        <h2>Frontend</h2>
+                        <div class="icons-lenguajes">
+                            <div class="img-container">
+                                <div class="img-skills">
+                                    <img src="images/icons8-css-48.png" alt="" class="skill-icon">
+                                </div>
+                                <span>CSS</span>
+                            </div>
+                            <div class="img-container">
+                                <div class="img-skills">
+                                    <img src="images/icons8-html-48.png" alt="" class="skill-icon">
+                                </div>
+                                <span>HTML</span>
+                            </div>
+                            <div class="img-container">
+                                <div class="img-skills">
+                                    <img src="images/icons8-javascript-48.png" alt="" class="skill-icon">
+                                </div>
+                                <span>JavaScript</span>
+                            </div>
+
+                            <div class="img-container">
+                                <div class="img-skills">
+                                    <img src="images/icons8-bootstrap-48.png" alt="" class="skill-icon">
+                                </div>
+                                <span>Bootstrap</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="box" id="box-servidor">
+                        <h2>Datos y Versiones</h2>
+                        <div class="icons-lenguajes">
+
+                            <div class="img-container">
+                                <div class="img-skills">
+                                    <img src="images/icons8-sql-60.png" alt="" class="skill-icon">
+                                </div>
+                                <span>SQL</span>
+                            </div>
+
+                            <div class="img-container">
+                                <div class="img-skills">
+                                    <img src="images/icons8-mysql-48.png" alt="" class="skill-icon">
+                                </div>
+                                <span>MySQL</span>
+                            </div>
+
+                            <div class="img-container">
+                                <div class="img-skills">
+                                    <img src="images/001-diagram.png" alt="" class="skill-icon">
+                                </div>
+                                <span>EasyUML</span>
+                            </div>
+
+
+                            <div class="img-container">
+                                <div class="img-skills">
+                                    <img src="images/icons8-git-48.png" alt="" class="skill-icon">
+                                </div>
+                                <span>Git</span>
+                            </div>
+
+                            <div class="img-container">
+                                <div class="img-skills">
+                                    <img src="images/github.png" alt="" class="skill-icon">
+                                </div>
+                                <span>GitHub</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box" id="box-servidor">
+                        <h2>Backend</h2>
+                        <div class="icons-lenguajes">
+                            <div class="img-container">
+                                <div class="img-skills">
+                                    <img src="images/icons8-java-48.png" alt="" class="skill-icon">
+                                </div>
+                                <span>Java</span>
+                            </div>
+
+                            <div class="img-container">
+                                <div class="img-skills">
+                                    <img src="images/icons8-spring-boot-30.png" alt="" class="skill-icon">
+                                </div>
+                                <span>Spring Boot</span>
+                            </div>
+
+                            <div class="img-container">
+                                <div class="img-skills">
+                                    <img src="images/thymeleaf_logo_icon_249398.png" alt="" class="skill-icon">
+                                </div>
+                                <span id="">Thymeleaf</span>
+                            </div>
+
+                            <div class="img-container">
+                                <div class="img-skills">
+                                    <img src="images/JUnit.png" alt="" class="skill-icon">
+                                </div>
+                                <span>JUnit 5</span>
+                            </div>
+
+                            <div class="img-container">
+                                <div class="img-skills">
+                                    <img src="images/mockito.png" alt="" class="skill-icon">
+                                </div>
+                                <span>Mockito</span>
+                            </div>
+
+                            <div class="img-container">
+                                <div class="img-skills">
+                                    <img src="images/icons8-docker-a-set-of-coupled-software-as-a-service-48.png" alt=""
+                                         class="skill-icon">
+                                </div>
+                                <span>Docker</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section class="estudios" id="estudios">
+            <h1 class="heading">Formacion</h1>
+            <div class="container contenedorEstudios">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card-container" id="card-container-uno"> <!-- Contenedor padre -->
+                            <div class="card card-estudios" id="card-estudios">
+                                <img src="images/EGGs.jpeg" class="card-img-top" alt="eggs">
+                                <div class="card-body">
+                                    <h4 class="card-title">EGG</h4>
+                                    <p class="card-text">Bootcamp intensivo que fusiona la educación virtual y la
+                                        cooperación humana. Con una metodología que conecta estudiantes globalmente,
+                                        promoviendo la colaboración y el desarrollo.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item" id="list-group-estudios">Duración Total: <span
+                                            class="span-text-cards">39sem</span></li>
+
+                                    <li class="list-group-item" id="list-group-estudios">Horas Totales del Curso:
+                                        <span class="span-text-cards">585H</span>
+                                    </li>
+
+                                    <li class="list-group-item" id="list-group-estudios">Modalidad del Curso:
+                                        <span class="span-text-cards">En línea</span>
+                                    </li>
+
+                                    <li class="list-group-item" id="list-group-estudios">Tipo de clase: <span
+                                            class="span-text-cards">Presencial</span></li>
+                                </ul>
+                            </div>
+                            <a id="buttonCertificado" href="#" class="buttonCertificado active">Documentación</a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 colconteiner">
+                        <div class="card-container" id="card-container-dos"> <!-- Contenedor padre -->
+                            <div class="card card-estudios" id="card-estudios">
+                                <img src="images/cac.jpeg" class="card-img-top" alt="codoAcodo">
+                                <div class="card-body">
+                                    <h4 class="card-title">Codo a Codo</h4>
+                                    <p class="card-text">Programa impulsado por el Gobierno de la Ciudad de Buenos Aires.
+                                        Tiene como objetivo brindar herramientas que faciliten la
+                                        inserción laboral en el sector de IT para mejorar la empleabilidad.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item" id="list-group-estudios">Duración Total: <span
+                                            class="span-text-cards">20sem</span></li>
+
+                                    <li class="list-group-item" id="list-group-estudios">Horas Totales del Curso:
+                                        <span class="span-text-cards">60H</span>
+                                    </li>
+
+                                    <li class="list-group-item" id="list-group-estudios">Modalidad del Curso:
+                                        <span class="span-text-cards">En línea</span>
+                                    </li>
+
+                                    <li class="list-group-item" id="list-group-estudios">Tipo de clase: <span
+                                            class="span-text-cards">Presencial</span></li>
+                                </ul>
+                            </div>
+                            <a id="buttonCertificado" href="#" class="buttonCertificado active">Documentación</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio" id="portfolio">
+            <h1 class="heading">Proyectos</h1>
+
+            <div class="portfolio-container">
+                <div>
+                    <div class="portfolio-box">
+                        <img src="images/proyecto.jpg" alt="">
+                        <div class="portfolio-layer">
+                            <h4>Source Gym</h4>
+                            <p>Fanatico de los fotos anonimos desde los 15 años, usuario habital de Reddit, 4Chan y Taringa,
+                                interesado p</p>
+                            <div class="row text-center">
+                                <div class="col-12">
+                                    <a href="#" class="me-1"><i
+                                            class="fab fa-github hero-text-social-2 icon-social-portafolio"></i></a>
+                                    <a href="#" class="ms-1"><i
+                                            class="fab fa-youtube hero-text-social-2 icon-social-portafolio"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-box">
+                    <img src="images/proyecto-2.png" alt="">
+                    <div class="portfolio-layer">
+                        <h4>Service Match</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident hic molestiae voluptas,
+                            mollitia veritatis quod obcaecati nam. Accusamus.</p>
+                        <div class="row text-center">
+                            <div class="col-12">
+                                <a href="#" class="me-1"><i
+                                        class="fab fa-github hero-text-social-2 icon-social-portafolio"></i></a>
+                                <a href="#" class="ms-1"><i
+                                        class="fab fa-youtube hero-text-social-2 icon-social-portafolio"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-box">
+                    <img src="images/proyecto.jpg" alt="">
+                    <div class="portfolio-layer">
+                        <h4>Portafolio Web</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident hic molestiae voluptas,
+                            mollitia veritatis quod obcaecati nam. Accusamus.</p>
+                        <div class="row text-center">
+                            <div class="col-12">
+                                <a href="#" class="me-1"><i
+                                        class="fab fa-github hero-text-social-2 icon-social-portafolio"></i></a>
+                                <a href="#" class="ms-1"><i
+                                        class="fab fa-youtube hero-text-social-2 icon-social-portafolio"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-box">
+                    <img src="images/celular.JPEG" alt="">
+                    <div class="portfolio-layer">
+                        <h4>En Proceso...</h4>
+                        <p>2024</p>
+                        <div class="row text-center">
+                            <div class="col-12">
+                                <a href="#" class="me-1"><i
+                                        class="fab fa-github hero-text-social-2 icon-social-portafolio"></i></a>
+                                <a href="#" class="ms-1"><i
+                                        class="fab fa-youtube hero-text-social-2 icon-social-portafolio"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-box">
+                    <img src="images/cafe.JPEG" alt="">
+                    <div class="portfolio-layer">
+                        <h4>En Proceso...</h4>
+                        <p>2024</p>
+                        <div class="row text-center">
+                            <div class="col-12">
+                                <a href="#" class="me-1"><i
+                                        class="fab fa-github hero-text-social-2 icon-social-portafolio"></i></a>
+                                <a href="#" class="ms-1"><i
+                                        class="fab fa-youtube hero-text-social-2 icon-social-portafolio"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-box">
+                    <img src="images/teclado.JPEG" alt="">
+                    <div class="portfolio-layer">
+                        <h4>En Proceso...</h4>
+                        <p>2024</p>
+                        <div class="row text-center">
+                            <div class="col-12">
+                                <a href="#" class="me-1"><i
+                                        class="fab fa-github hero-text-social-2 icon-social-portafolio"></i></a>
+                                <a href="#" class="ms-1"><i
+                                        class="fab fa-youtube hero-text-social-2 icon-social-portafolio"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-fluid" id="contacto">
+            <div class="row justify-content-center align-items-center">
+                <form action="/enviar-formulario" method="POST" class="formularioContacto text-center">
+                    <h1 class="titulo-contacto text-center ">Contacto</h1>
+
+                    <div class="row inputs-margin">
+                        <div class="form-group col-md-6">
+                            <input type="text" class="form-control bg-contacto-inputs text-white fw-semibold"
+                                   placeholder="Ingrese su nombre" name="nombre" autocomplete="off">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="text" class="form-control bg-contacto-inputs text-white fw-semibold"
+                                   placeholder="Ingrese su email" name="emailReclutador" autocomplete="off">
+                        </div>
+                    </div>
+
+                    <div class="form-group inputs-margin">
+                        <input type="text" class="form-control bg-contacto-inputs text-white fw-semibold"
+                               placeholder="Ingrese el asunto" name="asunto" autocomplete="off">
+                    </div>
+
+                    <div class="form-group inputs-margin">
+                        <textarea class="form-control bg-contacto-inputs text-white fw-semibold" name="comentario"
+                                  id="comentario" cols="30" rows="10" placeholder="Ingrese su mensaje..." autocomplete="off"></textarea>
+                    </div>
+
+                    <button type="submit" id="buttonContacto" class="buttonContacto active">Enviar</button>
+                </form>
+            </div>
+        </section>
+
+        <footer class="footer-color text-white py-2">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4">
+                        <p class="m-2 text-center">&copy; Derechos de autor 2023</p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <a class="d-block m-2 home-link" href="#">Volver al inicio</a>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <div class="social-icons m-2">
+                            <a href="#" class="me-3 social-icons" target="_blank"><i
+                                    class="fab fa-facebook linkedin hero-text-social-footer"></i></a>
+                            <a href="#" class="me-3 social-icons " target="_blank"><i
+                                    class="fab fa-linkedin hero-text-social-footer"></i></a>
+                            <a href="#" class="me-3 social-icons " target="_blank"><i
+                                    class="fab fa-whatsapp linkedin hero-text-social-footer"></i></a>
+                            <a href="#" class="me-2 social-icons " target="_blank"><i
+                                    class="fas fa-envelope linkedin hero-text-social-footer"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+        <script th:src="@{/js/script.js}"></script>
+        <script defer th:src="@{https://cdn.jsdelivr.net/npm/typed.js@2.0.12}"></script>
+
+    </body>
+
+</html>
