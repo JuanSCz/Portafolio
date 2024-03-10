@@ -408,7 +408,7 @@
     background-color: var(--second-bg-color);
 }
 
-#buttonCertificado {
+.buttonCertificado {
     color: var(--text-color);
     border-radius: 30px;
     background-color: #333;
@@ -423,7 +423,7 @@
     text-decoration: none;
 }
 
-#buttonCertificado:hover {
+.buttonCertificado:hover {
     background-color: #007ced !important;
     color: var(--text-color);
 }
@@ -654,6 +654,40 @@ footer {
     text-shadow: 1px 1px black;
     margin: 0;
     padding: 0;
+}
+
+.imagenesContainer {
+    display: flex;
+    align-items: center;
+    justify-content:flex-end; 
+    height: 100%;
+    gap: 2rem;
+}
+
+.imageCertificados {
+    max-width: 45%; 
+}
+
+.salirButton {
+    position:absolute;
+    bottom: 100px;
+    right: 55rem;
+    border-color: #007ced !important;
+    color: var(--text-color);
+    background-color: #333;
+    padding: 12px 50px;
+    margin: 5px 0;
+    margin-right: 7px;
+    border-radius: 30px;
+    border: 2px solid #e5e5e5;
+    box-shadow: 0 10px 10px -8px rgba(0, 0, 0, 0.78) !important;
+    text-decoration: none;
+    font-size: 16px;
+    text-shadow: 1px 1px black; 
+}
+
+.salirButton:hover {
+    background-color: #007ced !important;
 }
 
 
