@@ -12,7 +12,7 @@ menu.onclick = () => {
 };
 
 window.onscroll = () => {
-    menu.classlist.remove('bx-x');
+    menu.classList.remove('bx-x');
     navlist.classList.remove('open');
 };
 
@@ -53,19 +53,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener('DOMContentLoaded', function () {
     var certificados = [
-        ["images/FullStackEgg.png", "images/CertificadoSpring.png"]/*,
-        ["images/FullStackEgg.png", "images/CertificadoSpring.png"] */
+        ["images/fullStackEgg.png", "images/certificadoSpring.png"]/*,
+         ["images/FullStackEgg.png", "images/CertificadoSpring.png"] */
     ];
 
     var contenedorFlotante = crearContenedorFlotante("contenedorFlotante", certificados);
 
-  /*  var certificadoButtonUno = document.getElementById("buttonCertificadoUno"); */
+    /*  var certificadoButtonUno = document.getElementById("buttonCertificadoUno"); */
     var certificadoButtonDos = document.getElementById("buttonCertificadoDos");
 
- /*   certificadoButtonUno.addEventListener("click", function (e) {
-        e.preventDefault();
-        mostrarContenedorFlotante(contenedorFlotante, certificados[0]);
-    }); */
+    /*   certificadoButtonUno.addEventListener("click", function (e) {
+     e.preventDefault();
+     mostrarContenedorFlotante(contenedorFlotante, certificados[0]);
+     }); */
 
     certificadoButtonDos.addEventListener("click", function (e) {
         e.preventDefault();

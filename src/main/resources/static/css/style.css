@@ -343,14 +343,6 @@
     box-sizing: border-box;
 }
 
-#card-container-uno {
-    margin-right: 110px;
-}
-
-#card-container-dos {
-    margin-left: 110px;
-}
-
 .card-container:hover {
     box-shadow: 0 0 20px rgba(0, 124, 237, 0.9);
 }
@@ -589,6 +581,13 @@ footer {
     text-align: center;
 }
 
+.yo {
+    font-size: var(--p-font);
+    color: var(--main-color);
+    margin: 0px;
+    padding: 0px;
+}
+
 .copyright {
     margin: 5px;
     text-align: left;
@@ -659,13 +658,13 @@ footer {
 .imagenesContainer {
     display: flex;
     align-items: center;
-    justify-content:flex-end; 
+    justify-content:flex-end;
     height: 100%;
     gap: 2rem;
 }
 
 .imageCertificados {
-    max-width: 45%; 
+    max-width: 45%;
 }
 
 .salirButton {
@@ -683,7 +682,7 @@ footer {
     box-shadow: 0 10px 10px -8px rgba(0, 0, 0, 0.78) !important;
     text-decoration: none;
     font-size: 16px;
-    text-shadow: 1px 1px black; 
+    text-shadow: 1px 1px black;
 }
 
 .salirButton:hover {
