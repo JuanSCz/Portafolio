@@ -420,6 +420,13 @@
     color: var(--text-color);
 }
 
+#card-container-uno{
+    margin-right: 120px;
+}
+
+#card-container-dos{
+    margin-left: 120px;
+}
 
 .portfolio {
     height: 58rem;
@@ -704,6 +711,11 @@ footer {
 }
 
 @media (max-width: 840px) {
+
+    body{
+        height: 25rem;
+    }
+
     #menu-icon {
         display: block;
     }
@@ -738,6 +750,102 @@ footer {
 
     .navlist.open {
         top: 100%;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10px;
+
+    }
+
+    #posicion {
+        margin-top: 0px;
+    }
+
+    .hero-pic {
+        margin-left: 5rem;
+    }
+
+    .hero-text-p,
+    .hero-text-h5 {
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    .hero-text-span-nombre{
+        display: block;
+    }
+
+    .btn-group{
+        margin-left: 6rem;
+    }
+
+    .social{
+        margin-left: 10rem;
+    }
+
+    .services {
+        height: 150rem;
+        padding-top: 15px;
+    }
+
+    #box-servidor{
+        height: 21rem;
+    }
+
+    .img-container{
+        margin-top: 25px;
+    }
+
+    #estudios {
+        display: flex;
+        flex-direction: column;
+        height: 112rem;
+    }
+
+    .card-container {
+        width: 90%;
+        margin-bottom: 4rem;
+    }
+
+    .heading{
+        margin: 15px 0 25px 0;
+        text-align: center;
+    }
+
+    #card-container-uno{
+        margin-right: 0px;
+        margin-left: 1.1rem;
+    }
+
+    #card-container-dos{
+        margin-right: 0px;
+        margin-left: 1.1rem;
+    }
+
+    .portfolio {
+        max-width: 25%;
+        height: 131rem;
+    }
+
+    .headingProyectos{
+        margin-left: 6rem;
+        margin-top: 0px;
+    }
+
+    .portfolio-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #contacto {
+        height: 45.6rem;
+    }
+
+    .nombre{
+        margin-bottom: 5px;
     }
 
 }

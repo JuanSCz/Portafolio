@@ -18,7 +18,7 @@ window.onscroll = () => {
 
 document.addEventListener('DOMContentLoaded', function () {
     var typed = new Typed("#typed-output", {
-        strings: ["Programador Java Backend Jr"],
+        strings: ["Programador Java Jr"],
         typeSpeed: 70,
         backSpeed: 55,
         backDelay: 1000,
@@ -53,19 +53,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener('DOMContentLoaded', function () {
     var certificados = [
-        ["images/fullStackEgg.png", "images/certificadoSpring.png"]/*,
-         ["images/FullStackEgg.png", "images/CertificadoSpring.png"] */
+        ["images/fullStackEgg.png", "images/certificadoSpring.png"],
+        ["images/certificateCodoACodo.jpg", "images/certificateCodoACodo.jpg"]
     ];
 
     var contenedorFlotante = crearContenedorFlotante("contenedorFlotante", certificados);
 
-    /*  var certificadoButtonUno = document.getElementById("buttonCertificadoUno"); */
+    var certificadoButtonUno = document.getElementById("buttonCertificadoUno");
     var certificadoButtonDos = document.getElementById("buttonCertificadoDos");
 
-    /*   certificadoButtonUno.addEventListener("click", function (e) {
-     e.preventDefault();
-     mostrarContenedorFlotante(contenedorFlotante, certificados[0]);
-     }); */
+    certificadoButtonUno.addEventListener("click", function (e) {
+        e.preventDefault();
+        mostrarContenedorFlotante(contenedorFlotante, certificados[1]);
+    });
 
     certificadoButtonDos.addEventListener("click", function (e) {
         e.preventDefault();
