@@ -52,7 +52,7 @@ public class CorreoServicios {
         Properties props = new Properties();
         props.put("mail.smtp.host", "smtp.gmail.com");
         props.put("mail.smtp.host.trust", "smtp.gmail.com");
-        props.put("mail.smtp.starttls.enable", "true"); // Habilitar STARTTLS
+        props.put("mail.smtp.starttls.enable", "true");
         props.put("mail.smtp.port", "587");
         props.put("mail.smtp.user", emailFrom);
         props.put("mail.smtp.ssl.protocols", "TLSv1.2");
@@ -70,15 +70,13 @@ public class CorreoServicios {
             message.setFrom(new InternetAddress(emailFrom));
             message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(correo.getDestinatario()));
             message.setSubject(correo.getAsunto());
-            message.setText("Nombre: " + correo.getNombre() + "\nEmail: " + correo.getEmailReclutador()+ "\nAsunto: " + correo.getAsunto() + "\nComentario: " + correo.getComentario());
+            message.setText("Nombre: " + correo.getNombre() + "\nEmail: " + correo.getEmailReclutador() + "\nAsunto: " + correo.getAsunto() + "\nComentario: " + correo.getComentario());
 
             Transport.send(message);
 
             System.out.println("Correo enviado exitosamente.");
-
         } catch (MessagingException e) {
             throw new CorreoExceptions("Error al enviar el correo.");
         }
     }
-
 }
