@@ -929,11 +929,6 @@ footer {
         transition: .1s;
     }
 }
-@media (max-width: 1920px) {
-    .portfolio {
-        height: 56rem;
-    }
-}
 
 
 
