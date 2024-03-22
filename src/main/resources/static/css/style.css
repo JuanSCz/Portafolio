@@ -8,7 +8,6 @@
     scroll-behavior: smooth;
 }
 
-
 :root {
     --bg-color: #2a2a2a;
     --second-bg-color: #202020;
@@ -21,7 +20,6 @@
     --p-font: 1.1rem;
     --span-font: 1.5rem;
 }
-
 
 .header {
     position: fixed;
@@ -346,11 +344,11 @@
     max-width: auto;
     max-height: auto;
     background-color: var(--second-bg-color);
-    padding: 30px;
+    padding: 15px;
     border-radius: 1rem;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
     box-sizing: border-box;
-    margin: 30px 0 30px 0;
+    margin: 10px 0 30px 0;
 }
 
 .card-container:hover {
@@ -699,19 +697,15 @@ footer {
 }
 
 
-@media only screen and (max-width: 818px) {
-    #header {
-        padding: 15px 15px 15px 15px;
-    }
-
+@media only screen and (max-width: 430px) and (max-height: 933px) {
     .container {
         flex-direction: column;
         align-items: center;
     }
 
-    .hero-header{
+    .hero-header {
+        padding-top: 0;
         height: auto;
-        padding: 10px 0 10px 0;
     }
 
     #posicion {
@@ -720,11 +714,59 @@ footer {
         margin-top: 10px;
     }
 
-    .container .hero-pic{
+    .container .hero-pic {
         margin: 0 auto;
-        width: 260px;
-        height: 260px;
-        margin-bottom: 5px;
+    }
+
+    .hero-text-p {
+        margin-bottom: 8px;
+    }
+
+    .hero-text-h5 {
+        font-size: 23px;
+    }
+
+    .hero-text-span-js {
+        font-size: 23px;
+    }
+
+    .hero-text-about {
+        margin: 10px 0 10px 0;
+    }
+
+    .hero-text-about-2 {
+        margin-bottom: 0;
+    }
+
+    .btn-group {
+        margin-bottom: 10px;
+    }
+
+    #buttonCV,
+    #buttonContact {
+        font-size: 14px;
+    }
+}
+
+@media (width: 360px) and (max-height: 740px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-header {
+        padding-top: 0;
+        height: auto;
+    }
+
+    #posicion {
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 50px;
+    }
+
+    .container .hero-pic {
+        margin: 0 auto;
     }
 
     .hero-text-p {
@@ -745,10 +787,11 @@ footer {
 
     #buttonCV,
     #buttonContact {
-        padding: 10px 20px;
         font-size: 14px;
     }
+}
 
+@media only screen and (max-width: 818px) {
     #menu-icon {
         display: block;
     }
@@ -794,14 +837,13 @@ footer {
     .group-boxes {
         display: table-column;
     }
-
     .box {
         margin-bottom: 30px;
     }
 
     .box p,
     .box span {
-        font-size: 1.3rem; /* Tamaño de fuente deseado */
+        font-size: 1.3rem;
     }
 
     .titulo-stack {
@@ -810,19 +852,73 @@ footer {
     }
 }
 
-@media (width: 1280px) {
+@media (width: 1024px) and (max-height: 600px) {
+    .hero-header {
+        padding-top: 0;
+        height: auto;
+    }
+
     #posicion {
-        margin-top: 50px;
+        margin: 0 auto;
+        padding-top: 50px;
+    }
+
+    .hero-text-p {
+        margin-bottom: 8px;
+    }
+
+    .hero-text-about {
+        margin: 10px 0 10px 0;
+    }
+
+    .hero-text-about-2 {
+        margin-bottom: 0;
+    }
+
+    .btn-group {
+        margin-bottom: 10px;
+    }
+
+    #buttonCV,
+    #buttonContact {
+        font-size: 14px;
+    }
+}
+
+@media (width: 1280px) and (max-height: 900px) {
+    .hero-header {
+        padding-top: 0;
+        height: auto;
+    }
+
+    #posicion {
+        margin: 0 auto;
+        padding-top: 90px;
+    }
+
+    .hero-text-p {
+        margin-bottom: 8px;
+    }
+
+    .hero-text-about {
+        margin: 10px 0 10px 0;
+    }
+
+    .hero-text-about-2 {
+        margin-bottom: 0;
+    }
+
+    .btn-group {
+        margin-bottom: 10px;
+    }
+
+    #buttonCV,
+    #buttonContact {
+        font-size: 14px;
     }
 }
 
 @media (max-width: 1480px) {
-
-    .hero-header{
-        height: auto;
-        padding-bottom: 10px;
-    }
-
     header {
         padding: 12px 2.5%;
         transition: .1s;
@@ -833,4 +929,15 @@ footer {
         transition: .1s;
     }
 }
+@media (max-width: 1920px) {
+    .portfolio {
+        height: 56rem;
+    }
+}
+
+
+
+
+
+
 

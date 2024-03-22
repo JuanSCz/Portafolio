@@ -32,7 +32,7 @@
             </div>
         </header>
 
-        <main class="hero-header">
+        <main class="hero-header" id="hero-header">
             <div th:if="${exito != null}" class="alert alerta-exito" role="alert" id="alerta-exito">
                 <p class="cartel-exceptions-exito text-center text-white" th:text="${exito}"></p>
             </div>
@@ -51,22 +51,31 @@
                         <p class="hero-text-p">Hola, mi nombre es <span class="hero-text-span-nombre">Juan Santa
                                 Cruz</span></p>
                         <h5 class="hero-text-h5">Soy <span class="hero-text-span-js" id="typed-output"></span></h5>
-                        <p class="hero-text-about">Mis intereses abarcan la geopolítica, la economía, el avance tecnológico y, por supuesto, la programación. </p>
+                        <p class="hero-text-about">Mis intereses abarcan la geopolítica, la economía, el avance tecnológico
+                            y, por supuesto, la programación. </p>
 
-                        <p class="hero-text-about">En el año 2024, estoy enfocado en destacarme académicamente a través de la carrera Analista de Sistemas. Además, tengo como meta alcanzar un nivel B2 en inglés para fortalecer mis habilidades profesionales.</p>
+                        <p class="hero-text-about">En el año 2024, estoy enfocado en destacarme académicamente a través de
+                            la carrera Analista de Sistemas. Además, tengo como meta alcanzar un nivel B2 en inglés para
+                            fortalecer mis habilidades profesionales.</p>
 
-                        <p class="hero-text-about-2"> Soy un programador en constante evolución, caracterizado por ser autodidacta y autosuficiente. 
+                        <p class="hero-text-about-2"> Soy un programador en constante evolución, caracterizado por ser
+                            autodidacta y autosuficiente.
                         </p>
 
                         <div class="btn-group">
-                            <a id="buttonCV" href="https://drive.google.com/file/d/1wwlVKf3QjLx8_gML3U7_Gs-KGzkR3KX0/view?usp=drive_link" download="CV_JMSC.pdf" class="buttonCV active" target="_blank">Descargar CV</a>
+                            <a id="buttonCV"
+                               href="https://drive.google.com/file/d/1wwlVKf3QjLx8_gML3U7_Gs-KGzkR3KX0/view?usp=drive_link"
+                               download="CV_JMSC.pdf" class="buttonCV active" target="_blank">Descargar CV</a>
                             <a id="buttonContact" href="#contacto" class="buttonContact">Contacto</a>
                         </div>
 
                         <div class="social">
-                            <a href="https://www.facebook.com/juanSC.580" target="_blank"><i class="fab fa-facebook hero-text-social"></i></a>
-                            <a href="https://www.linkedin.com/in/juan-manuel-santa-cruz/" target="_blank"><i class="fab fa-linkedin hero-text-social"></i></a>
-                            <a href="https://wa.me/542474440215" target="_blank"><i class="fab fa-whatsapp hero-text-social"></i></a>
+                            <a href="https://www.facebook.com/juanSC.580" target="_blank"><i
+                                    class="fab fa-facebook hero-text-social"></i></a>
+                            <a href="https://www.linkedin.com/in/juan-manuel-santa-cruz/" target="_blank"><i
+                                    class="fab fa-linkedin hero-text-social"></i></a>
+                            <a href="https://wa.me/542474440215" target="_blank"><i
+                                    class="fab fa-whatsapp hero-text-social"></i></a>
                             <a href="#contacto"><i class="fas fa-envelope hero-text-social"></i></a>
                         </div>
                     </div>
@@ -239,8 +248,8 @@
             <h1 class="heading">Formacion</h1>
             <div class="container contenedorEstudios">
                 <div class="row">
-                    <div class="col-md-6">
-                        <div class="card-container" id="card-container-uno"> <!-- Contenedor padre -->
+                    <div class="col-md-4">
+                        <div class="card-container" id="card-container-uno">
                             <div class="card card-estudios" id="card-estudios">
                                 <img src="images/cac.jpeg" class="card-img-top" alt="codoAcodo">
                                 <div class="card-body">
@@ -269,8 +278,8 @@
                         </div>
                     </div>
 
-                    <div class="col-md-6 col-sm-12">
-                        <div class="card-container" id="card-container-dos"> <!-- Contenedor padre -->
+                    <div class="col-md-4 col-sm-12">
+                        <div class="card-container" id="card-container-dos">
                             <div class="card card-estudios" id="card-estudios">
                                 <img src="images/EGGs.jpeg" class="card-img-top" alt="eggs">
                                 <div class="card-body">
@@ -297,40 +306,38 @@
                         </div>
                     </div>
 
-                    <!--     
-                                                          PROXIMAMENTE EN CINES
                     <div class="col-md-4">
-                             <div class="card-container" id="card-container-tres"> 
-                                 <div class="card card-estudios" id="card-estudios">
-                                     <img src="images/ORT.png" class="card-img-top" alt="ORT">
-                                     <div class="card-body">
-                                         <h4 class="card-title">Analista de Sistemas</h4>
-                                         <p class="card-text">ORT es una institución privada de nivel alto de educación del sistema educativo argentino. Pertenece a ORT Argentina, una organización judía no gubernamental dedicada a la educación y vinculada a ORT Mundial​.</p>
-                                     </div>
-                                     <ul class="list-group list-group-flush">
-                                         <li class="list-group-item" id="list-group-estudios">Duración Total: <span
-                                                 class="span-text-cards">2a </span></li>
-     
-                                         <li class="list-group-item" id="list-group-estudios">Horas semanales:
-                                             <span class="span-text-cards">16H</span>
-                                         </li>
-     
-                                         <li class="list-group-item" id="list-group-estudios">Modalidad del Curso:
-                                             <span class="span-text-cards">En línea</span>
-                                         </li>
-     
-                                         <li class="list-group-item" id="list-group-estudios">Tipo de clase: <span
-                                                 class="span-text-cards">Presencial</span></li>
-                                     </ul>
-                                 </div>
-                                 <a id="buttonCertificadoDos" href="#estudios" class="buttonCertificado">Documentacion</a>
-                             </div>
-                         </div>  -->
+                        <div class="card-container" id="card-container-tres"> 
+                            <div class="card card-estudios" id="card-estudios">
+                                <img src="images/ORT.png" class="card-img-top" alt="ORT">
+                                <div class="card-body">
+                                    <h4 class="card-title">Analista de Sistemas</h4>
+                                    <p class="card-text">ORT es una institución privada de nivel alto de educación del sistema educativo argentino. Pertenece a ORT Argentina, una organización judía no gubernamental dedicada a la educación y vinculada a ORT Mundial​.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item" id="list-group-estudios">Duración Total: <span
+                                            class="span-text-cards">2a </span></li>
+
+                                    <li class="list-group-item" id="list-group-estudios">Horas semanales:
+                                        <span class="span-text-cards">16H</span>
+                                    </li>
+
+                                    <li class="list-group-item" id="list-group-estudios">Modalidad del Curso:
+                                        <span class="span-text-cards">En línea</span>
+                                    </li>
+
+                                    <li class="list-group-item" id="list-group-estudios">Tipo de clase: <span
+                                            class="span-text-cards">Presencial</span></li>
+                                </ul>
+                            </div>
+                            <a id="buttonCertificadoDos" href="#estudios" class="buttonCertificado">Documentacion</a>
+                        </div>
+                    </div>
                 </div> 
             </div>
         </section>
 
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio">
             <h1 class="heading headingProyectos">Proyectos</h1>
 
             <div class="portfolio-container">
