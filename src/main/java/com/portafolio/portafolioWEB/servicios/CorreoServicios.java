@@ -17,8 +17,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class CorreoServicios {
 
-    private static String emailFrom = "juan.mitre580@gmail.com";
-    private static String passwordFrom = "gtcbhsxfmfqylmtp";
+
 
     public void crearCorreo(String nombre, String emailReclutador, String asunto, String comentario) throws CorreoExceptions, MessagingException {
         validarCorreo(nombre, emailReclutador, asunto, comentario);
